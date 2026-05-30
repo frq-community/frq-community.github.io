@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frq — find your frequency</title>
+<meta name="description" content="Not a religion. Not a cult. Just people who actually give a damn — and show up for each other.">
+<meta property="og:title" content="Frq">
+<meta property="og:description" content="Not a religion. Not a cult. Just people who actually give a damn.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://frq-community.github.io">
+<meta property="og:image" content="https://frq-community.github.io/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Frq — find your frequency">
+<meta name="twitter:description" content="Not a religion. Not a cult. Just people who actually give a damn.">
+<meta name="twitter:image" content="https://frq-community.github.io/assets/og-image.png">
+<meta name="theme-color" content="#0a0a09">
+<link rel="canonical" href="https://frq-community.github.io/">
+<!-- JSON-LD structured data for SEO / rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Frq",
+  "alternateName": "Frq Community",
+  "description": "A Gen Z spiritual community built on kindness, not religion.",
+  "url": "https://frq-community.github.io",
+  "logo": "https://frq-community.github.io/assets/og-image.png",
+  "slogan": "find your frequency",
+  "email": "frq.community@gmail.com"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a09;
+    --surface: #111110;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8e4dc;
+    --muted: #6b6860;
+    --accent: #c8f060;
+    --serif: 'Instrument Serif', serif;
+    --mono: 'DM Mono', monospace;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--mono);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: var(--accent); color: #0a0a09; }
+
+  /* noise overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.4;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2rem;
+    border-bottom: 1px solid var(--border);
+    background: rgba(10,10,9,0.85);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+
+  .nav-logo span { color: var(--accent); }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--text); }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8rem 2rem 4rem;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--serif);
+    font-size: clamp(140px, 25vw, 320px);
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.04);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.04em;
+  }
+
+  .hero-content {
+    max-width: 820px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.6s 0.1s forwards;
+  }
+
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(48px, 8vw, 96px);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.7s 0.2s forwards;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+    opacity: 0;
+    animation: fadeUp 0.7s 0.35s forwards;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 0.7s 0.5s forwards;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.75rem 1.75rem;
+    background: var(--accent);
+    color: #0a0a09;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+  }
+
+  .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.75rem 1.75rem;
+    background: transparent;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .btn-ghost:hover { color: var(--text); border-color: rgba(255,255,255,0.2); }
+
+  .hero-ticker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    gap: 3rem;
+    overflow: hidden;
+  }
+
+  section {
+    padding: 5rem 2rem;
+    border-bottom: 1px solid var(--border);
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+  }
+
+  .section-title em { font-style: italic; color: var(--accent); }
+
+  .body-text {
+    color: var(--muted);
+    max-width: 560px;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+  }
+
+  .pullquote {
+    border-left: 2px solid var(--accent);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .pullquote p {
+    font-family: var(--serif);
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-style: italic;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-top: 2.5rem;
+  }
+
+  .principle-item {
+    background: var(--bg);
+    padding: 1.5rem;
+    transition: background 0.2s;
+  }
+
+  .principle-item:hover { background: var(--surface); }
+
+  .p-num {
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+  }
+
+  .p-name {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .p-body {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  .rituals-list { margin-top: 2rem; }
+
+  .ritual-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+  }
+
+  .ritual-item:last-child { border-bottom: none; }
+
+  .ritual-freq {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-top: 3px;
+  }
+
+  .ritual-name {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+  }
+
+  .ritual-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.5rem; }
+
+  .tag {
+    font-size: 11px;
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+
+  .join-section {
+    padding: 6rem 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .join-section .section-label { text-align: center; }
+
+  .join-title {
+    font-family: var(--serif);
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.25rem;
+    color: var(--text);
+  }
+
+  .join-title em { font-style: italic; color: var(--accent); }
+
+  .join-sub {
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 440px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.8;
+  }
+
+  .anon-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 0.6rem 1.1rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.04em;
+  }
+
+  .anon-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 500;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+  }
+
+  .modal-overlay.open { display: flex; }
+
+  .modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .modal-close:hover { color: var(--text); }
+
+  .modal-title {
+    font-family: var(--serif);
+    font-size: 24px;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+  }
+
+  .modal-sub {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .field-label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .field-input {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 14px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 1.25rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .field-input:focus { border-color: var(--accent); }
+  .field-input::placeholder { color: var(--muted); }
+
+  .modal-divider {
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    margin: 1rem 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .modal-divider::before, .modal-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 38%;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .modal-divider::before { left: 0; }
+  .modal-divider::after { right: 0; }
+
+  .oauth-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0.7rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+    transition: color 0.2s, border-color 0.2s;
+    letter-spacing: 0.03em;
+  }
+
+  .oauth-btn:hover { color: var(--text); border-color: rgba(255,255,255,0.2); }
+
+  .modal-anon {
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+
+  .modal-anon span { color: var(--accent); }
+
+  footer {
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--muted);
+    letter-spacing: -0.02em;
+    text-decoration: none;
+  }
+
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--text); }
+
+  .footer-note {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+
+  /* hamburger toggle — hidden on desktop */
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 28px;
+    height: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 110;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 1.5px;
+    background: var(--text);
+    transition: transform 0.25s, opacity 0.25s;
+  }
+  .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2) { opacity: 0; }
+  .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+  /* full-screen mobile menu overlay */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    z-index: 105;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    color: var(--text);
+    text-decoration: none;
+    font-family: var(--serif);
+    font-size: 32px;
+    letter-spacing: -0.02em;
+  }
+
+  /* select dropdown + form status (waitlist form) */
+  .field-select {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 14px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 1.25rem;
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6860' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+  }
+  .field-select:focus { border-color: var(--accent); }
+
+  .form-status {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 0.75rem;
+    letter-spacing: 0.02em;
+  }
+  .form-status.success { color: var(--accent); }
+  .form-status.error { color: #f0846a; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 600px) {
+    nav { padding: 1rem 1.25rem; }
+    .nav-links { display: none; }
+    .nav-toggle { display: flex; }
+    .hero { padding: 6rem 1.25rem 3rem; }
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .hero-actions .btn-primary, .hero-actions .btn-ghost { justify-content: center; }
+    .hero-ticker { gap: 1.5rem; font-size: 10px; padding: 0.85rem 1.25rem; }
+    section { padding: 3.5rem 1.25rem; }
+    .ritual-item { grid-template-columns: 1fr; gap: 0.5rem; }
+    .join-section { padding: 4rem 1.25rem; }
+    footer { padding: 1.5rem 1.25rem; flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">fr<span>q</span></a>
+  <ul class="nav-links">
+    <li><a href="#why">Why</a></li>
+    <li><a href="#principles">Principles</a></li>
+    <li><a href="circle.html">Circle</a></li>
+    <li><a href="manifesto.html">Manifesto</a></li>
+    <li><a href="#join" onclick="openModal(); return false;">Join →</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- full-screen mobile navigation overlay -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#why" onclick="closeMenu()">Why</a>
+  <a href="#principles" onclick="closeMenu()">Principles</a>
+  <a href="circle.html">Circle</a>
+  <a href="manifesto.html">Manifesto</a>
+  <a href="#join" data-modal onclick="closeMenu(); openModal(); return false;">Join →</a>
+</div>
+
+<div class="hero">
+  <div class="hero-bg-text" aria-hidden="true">frq</div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">find your frequency</p>
+    <h1 class="hero-title">Not a religion.<br><em>Not a cult.</em></h1>
+    <p class="hero-sub">Just people who actually give a damn — and show up for each other. No doctrine. No guru. No BS.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="openModal()">Join anonymously →</button>
+      <a href="#why" class="btn-ghost">Read the manifesto</a>
+    </div>
+  </div>
+  <div class="hero-ticker" aria-hidden="true">
+    <span>v0.1 — living document</span>
+    <span>anonymous by design</span>
+    <span>no doctrine</span>
+    <span>open source community</span>
+  </div>
+</div>
+
+<section id="why" class="reveal">
+  <p class="section-label">The world rn</p>
+  <h2 class="section-title">Why we <em>exist</em></h2>
+  <p class="body-text">Leaders are literally running on dividing people. Scroll for five minutes and you'll see wars, riots, and someone using God to justify bombing kids. Institutions that were supposed to hold things together are the ones setting them on fire.</p>
+  <p class="body-text">Meanwhile everyone's chronically online, chronically lonely, and lowkey looking for something real. Not a sermon. Not a brand. Just actual connection. People who mean what they say.</p>
+  <div class="pullquote">
+    <p>Every tradition on earth said the same thing at its core: take care of each other. Wild how that got lost.</p>
+  </div>
+  <p class="body-text">We're not here to fix religion. We're here to do the thing religion forgot to do.</p>
+</section>
+
+<section id="principles" class="reveal">
+  <p class="section-label">How we move</p>
+  <h2 class="section-title">The <em>seven</em> things</h2>
+  <p class="body-text">Not rules. Not commandments. Just things we keep coming back to.</p>
+  <div class="principles-grid">
+    <div class="principle-item">
+      <div class="p-num">01</div>
+      <div class="p-name">We're all connected</div>
+      <div class="p-body">Your situation is tied to your neighbour's. Not metaphorically — actually. Act like it.</div>
+    </div>
+    <div class="principle-item">
+      <div class="p-num">02</div>
+      <div class="p-name">Everyone has worth</div>
+      <div class="p-body">Not earned. Not conditional. Just — yes. Full stop.</div>
+    </div>
+    <div class="principle-item">
+      <div class="p-num">03</div>
+      <div class="p-name">Actions > aesthetics</div>
+      <div class="p-body">Posting about kindness isn't kindness. What you do when no one's watching is.</div>
+    </div>
+    <div class="principle-item">
+      <div class="p-num">04</div>
+      <div class="p-name">Sit with "idk"</div>
+      <div class="p-body">Not knowing is fine. Pretending to know is the problem. Uncertainty is honest.</div>
+    </div>
+    <div class="principle-item">
+      <div class="p-num">05</div>
+      <div class="p-name">Repair > cancel</div>
+      <div class="p-body">People mess up. The question is — do you come back and make it right?</div>
+    </div>
+    <div class="principle-item">
+      <div class="p-num">06</div>
+      <div class="p-name">Be here</div>
+      <div class="p-body">Real presence in 2026 is rare. That's exactly why it hits different.</div>
+    </div>
+    <div class="principle-item">
+      <div class="p-num">07</div>
+      <div class="p-name">You're enough</div>
+      <div class="p-body">The whole system runs on making you feel like you're not. We don't do that here.</div>
+    </div>
+  </div>
+</section>
+
+<section id="practice" class="reveal">
+  <p class="section-label">The practice</p>
+  <h2 class="section-title">What we <em>actually</em> do</h2>
+  <p class="body-text">Four simple rituals. No performance required.</p>
+  <div class="rituals-list">
+    <div class="ritual-item">
+      <div class="ritual-freq">Weekly</div>
+      <div>
+        <div class="ritual-name">The circle</div>
+        <div class="ritual-desc">Small group, 8–12 people, once a week. One question. No agenda, no hierarchy, no performance. Online or irl.</div>
+      </div>
+    </div>
+    <div class="ritual-item">
+      <div class="ritual-freq">Daily</div>
+      <div>
+        <div class="ritual-name">The check-in</div>
+        <div class="ritual-desc">30 seconds. One prompt from the community AI to carry into your day. Not prayer — just a nudge to not be on autopilot.</div>
+      </div>
+    </div>
+    <div class="ritual-item">
+      <div class="ritual-freq">Monthly</div>
+      <div>
+        <div class="ritual-name">One repair</div>
+        <div class="ritual-desc">Pick one thing you messed up. One relationship, one situation. Take one real step. Tell the circle. Get witnessed.</div>
+      </div>
+    </div>
+    <div class="ritual-item">
+      <div class="ritual-freq">x4 / year</div>
+      <div>
+        <div class="ritual-name">Seasonal drop</div>
+        <div class="ritual-desc">Everyone gathers. Not a conference. More like a reset — reflect, reconnect, set intention for what's next.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <p class="section-label">What we're not</p>
+  <h2 class="section-title">The <em>anti-cult</em> clause</h2>
+  <p class="body-text">No single person whose word is final. No gatekeeping who belongs. No required beliefs. No purity tests. No us-vs-them. No monetising your loneliness.</p>
+  <p class="body-text">The health check is simple: does the quietest, newest, most different person in the room feel as safe as anyone else?</p>
+  <div class="tags">
+    <span class="tag">no doctrine</span>
+    <span class="tag">no hierarchy</span>
+    <span class="tag">no gatekeeping</span>
+    <span class="tag">no purity tests</span>
+    <span class="tag">no exploitation</span>
+    <span class="tag">founded anonymously</span>
+  </div>
+</section>
+
+<div class="join-section reveal" id="join">
+  <p class="section-label">Ready?</p>
+  <h2 class="join-title">Find your<br><em>frequency.</em></h2>
+  <p class="join-sub">Join with your existing ID. You show up as whoever you want to be called. No real names required.</p>
+  <button class="btn-primary" onclick="openModal()">Join Frq →</button>
+  <br>
+  <div class="anon-note">
+    <div class="anon-dot"></div>
+    Your real identity stays with you. Always.
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-label="Join Frq">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
+    <div class="modal-title">Join Frq</div>
+    <div class="modal-sub">Login with an existing account. We never see your real name — you choose what to go by.</div>
+
+    <button class="oauth-btn" onclick="comingSoon()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      Continue with Google
+    </button>
+
+    <button class="oauth-btn" onclick="comingSoon()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      Continue with GitHub
+    </button>
+
+    <div class="modal-divider">or</div>
+
+    <!-- Waitlist form via Formspree (no backend needed, works on GitHub Pages).
+         Connected to form mojbzaje (frq.community@gmail.com). -->
+    <form action="https://formspree.io/f/mojbzaje" method="POST" data-formspree novalidate>
+      <div data-form-fields>
+        <label class="field-label" for="email-input">Email</label>
+        <input class="field-input" id="email-input" name="email" type="email" required placeholder="you@wherever.com">
+
+        <label class="field-label" for="handle-input">Your name in the community</label>
+        <input class="field-input" id="handle-input" name="handle" type="text" required placeholder="not your real name — pick anything">
+
+        <label class="field-label" for="tz-input">Timezone <span style="text-transform:none;">(for circle matching)</span></label>
+        <select class="field-select" id="tz-input" name="timezone" required>
+          <option value="" disabled selected>Pick your timezone</option>
+          <option value="Pacific/Honolulu">Hawaii (HST)</option>
+          <option value="America/Anchorage">Alaska (AKT)</option>
+          <option value="America/Los_Angeles">Pacific — US/Canada (PT)</option>
+          <option value="America/Denver">Mountain (MT)</option>
+          <option value="America/Chicago">Central (CT)</option>
+          <option value="America/New_York">Eastern — US/Canada (ET)</option>
+          <option value="America/Sao_Paulo">Brazil (BRT)</option>
+          <option value="Europe/London">UK / Ireland (GMT)</option>
+          <option value="Europe/Paris">Central Europe (CET)</option>
+          <option value="Europe/Athens">Eastern Europe (EET)</option>
+          <option value="Africa/Lagos">West Africa (WAT)</option>
+          <option value="Africa/Johannesburg">South Africa (SAST)</option>
+          <option value="Asia/Dubai">Gulf (GST)</option>
+          <option value="Asia/Kolkata">India (IST)</option>
+          <option value="Asia/Bangkok">SE Asia (ICT)</option>
+          <option value="Asia/Shanghai">China (CST)</option>
+          <option value="Asia/Tokyo">Japan / Korea (JST)</option>
+          <option value="Australia/Sydney">Australia — East (AET)</option>
+          <option value="Pacific/Auckland">New Zealand (NZT)</option>
+          <option value="other">Somewhere else</option>
+        </select>
+
+        <!-- hidden Formspree controls -->
+        <input type="hidden" name="_subject" value="New Frq member request">
+        <input type="hidden" name="_replyto" id="replyto-input">
+        <!-- honeypot: bots fill this, humans never see it -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Request access →</button>
+      </div>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="modal-anon"><span>Anonymous by design.</span> Your real identity is never stored or shared. You login with your ID — we only see your chosen handle.</p>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html" class="footer-logo">frq</a>
+  <div class="footer-links">
+    <a href="manifesto.html">Manifesto</a>
+    <a href="circle.html">Circle</a>
+  </div>
+  <div class="footer-note">founded anonymously · v0.1 · community-owned</div>
+</footer>
+
+<script>
+  /* ---------- join modal ---------- */
+  function openModal() {
+    document.getElementById('modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    var email = document.getElementById('email-input');
+    if (email) email.focus();
+  }
+
+  function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  /* ---------- mobile hamburger menu ---------- */
+  function toggleMenu() {
+    var toggle = document.querySelector('.nav-toggle');
+    var menu = document.getElementById('mobile-menu');
+    var isOpen = menu.classList.toggle('open');
+    toggle.classList.toggle('open', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  function closeMenu() {
+    var toggle = document.querySelector('.nav-toggle');
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { closeModal(); closeMenu(); }
+  });
+
+  /* OAuth providers aren't wired up yet — nudge people to the email form. */
+  function comingSoon() {
+    toast("login coming soon — drop your email below and we'll reach out.");
+  }
+
+  function toast(message) {
+    var note = document.createElement('div');
+    note.textContent = message;
+    note.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#c8f060;color:#0a0a09;padding:0.75rem 1.5rem;font-family:"DM Mono",monospace;font-size:13px;z-index:999;letter-spacing:0.04em;max-width:90vw;text-align:center;';
+    document.body.appendChild(note);
+    setTimeout(function () { note.remove(); }, 3500);
+  }
+
+  /* ---------- scroll reveal ---------- */
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  /* ---------- waitlist form (Formspree, inline thank-you, no redirect) ---------- */
+  (function () {
+    var form = document.querySelector('form[data-formspree]');
+    if (!form) return;
+    var statusEl = form.querySelector('.form-status');
+    var fields = form.querySelector('[data-form-fields]');
+    var submitBtn = form.querySelector('[type="submit"]');
+    var submitLabel = submitBtn ? submitBtn.textContent : '';
+
+    function setStatus(msg, kind) {
+      statusEl.textContent = msg;
+      statusEl.className = 'form-status ' + (kind || '');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      setStatus('');
+
+      // native validation (required email/handle/timezone)
+      if (!form.checkValidity()) {
+        setStatus('fill in your email, handle, and timezone first.', 'error');
+        return;
+      }
+
+      // keep _replyto in sync with the email field
+      var replyto = document.getElementById('replyto-input');
+      var email = document.getElementById('email-input');
+      if (replyto && email) replyto.value = email.value;
+
+      // guard: make sure the founder swapped in a real Formspree ID
+      if (form.action.indexOf('REPLACE_WITH_FORM_ID') !== -1) {
+        setStatus("almost there — the form isn't connected yet. check back soon.", 'error');
+        return;
+      }
+
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'sending…'; }
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          form.reset();
+          if (fields) fields.style.display = 'none';
+          setStatus("you're on the list. we'll reach out when your frequency's ready.", 'success');
+        } else {
+          return res.json().then(function (data) {
+            var msg = (data && data.errors)
+              ? data.errors.map(function (er) { return er.message; }).join(', ')
+              : 'something glitched. try again in a sec.';
+            setStatus(msg, 'error');
+          });
+        }
+      }).catch(function () {
+        setStatus("couldn't reach the server. check your connection and try again.", 'error');
+      }).finally(function () {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitLabel; }
+      });
+    });
+
+    // pre-select the visitor's timezone so it's one less thing to do
+    try {
+      var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      var sel = form.querySelector('select[name="timezone"]');
+      if (tz && sel) {
+        for (var i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].value === tz) { sel.selectedIndex = i; break; }
+        }
+      }
+    } catch (e) { /* Intl unavailable — leave default */ }
+  })();
+</script>
+</body>
+</html>

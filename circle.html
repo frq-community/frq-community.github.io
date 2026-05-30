@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Circle — Frq</title>
+<meta name="description" content="The weekly circle: 8–12 people, one question, one hour. No hierarchy, no performance. Request to join one or start your own.">
+<meta property="og:title" content="Frq — the weekly circle">
+<meta property="og:description" content="8–12 people, one question, one hour. No hierarchy. Online or irl. Request a circle or start one.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://frq-community.github.io/circle.html">
+<meta property="og:image" content="https://frq-community.github.io/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Frq — the weekly circle">
+<meta name="twitter:description" content="8–12 people, one question, one hour. No hierarchy. Online or irl.">
+<meta name="twitter:image" content="https://frq-community.github.io/assets/og-image.png">
+<meta name="theme-color" content="#0a0a09">
+<link rel="canonical" href="https://frq-community.github.io/circle.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/shared.css">
+<style>
+  /* circle-specific layout */
+  .how-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-top: 2.5rem;
+  }
+  .how-item { background: var(--bg); padding: 1.5rem; }
+  .how-num { font-size: 11px; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+  .how-name { font-family: var(--serif); font-size: 17px; color: var(--text); margin-bottom: 0.5rem; line-height: 1.3; }
+  .how-body { font-size: 12px; color: var(--muted); line-height: 1.65; }
+
+  .signup {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+    max-width: 480px;
+    margin-top: 2rem;
+  }
+  .signup .field-label span { text-transform: none; }
+  @media (max-width: 600px) { .signup { padding: 1.75rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">fr<span>q</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#why">Why</a></li>
+    <li><a href="index.html#principles">Principles</a></li>
+    <li><a href="circle.html" class="active">Circle</a></li>
+    <li><a href="manifesto.html">Manifesto</a></li>
+    <li><a href="#join" onclick="openModal(); return false;">Join →</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html#why">Why</a>
+  <a href="index.html#principles">Principles</a>
+  <a href="circle.html" class="active">Circle</a>
+  <a href="manifesto.html">Manifesto</a>
+  <a href="#join" data-modal onclick="closeMenu(); openModal(); return false;">Join →</a>
+</div>
+
+<header class="page-head reveal">
+  <p class="page-eyebrow">The practice · weekly</p>
+  <h1 class="page-title">The <em>circle</em></h1>
+  <p class="page-lede">8–12 people. One question. One hour. No agenda, no hierarchy, no performance. The whole thing Frq is built around — showing up for each other, on a schedule, on purpose.</p>
+</header>
+
+<section class="reveal">
+  <p class="section-label">What it is</p>
+  <h2 class="section-title">A small room, <em>once a week</em></h2>
+  <p class="body-text">A circle is a small, consistent group that meets once a week — online or in person. Same people, same hour. Not a support group, not a class, not a networking thing. Just a room where you get to be a person and so does everyone else.</p>
+  <p class="body-text">Each week there's <strong>one question</strong>. Everyone gets space to answer if they want to. Nobody has to perform, nobody runs the room, and the quietest person matters as much as the loudest. That's the whole format.</p>
+  <div class="pullquote">
+    <p>The health check is simple: does the quietest, newest, most different person in the room feel as safe as anyone else?</p>
+  </div>
+</section>
+
+<section class="reveal">
+  <p class="section-label">How it works</p>
+  <h2 class="section-title">Four <em>rules</em>, basically</h2>
+  <div class="how-grid">
+    <div class="how-item">
+      <div class="how-num">01</div>
+      <div class="how-name">8–12 people</div>
+      <div class="how-body">Big enough for range, small enough that everyone gets heard. New circles split when they outgrow the room.</div>
+    </div>
+    <div class="how-item">
+      <div class="how-num">02</div>
+      <div class="how-name">One question</div>
+      <div class="how-body">A single prompt per week. No agenda beyond it. The question does the work — you just answer honestly or pass.</div>
+    </div>
+    <div class="how-item">
+      <div class="how-num">03</div>
+      <div class="how-name">One hour</div>
+      <div class="how-body">Starts on time, ends on time. Respecting the hour is how you respect everyone who showed up for it.</div>
+    </div>
+    <div class="how-item">
+      <div class="how-num">04</div>
+      <div class="how-name">No hierarchy</div>
+      <div class="how-body">Someone keeps time, but nobody leads. No guru, no host with all the answers. Roles rotate. That's the point.</div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal" id="join">
+  <p class="section-label">Get in a room</p>
+  <h2 class="section-title">Join a circle, or <em>start one</em></h2>
+  <p class="body-text">Tell us your timezone and we'll match you to a circle that meets when you're awake. Want to start your own? Pick that below — we'll help you open the room and find your first 8.</p>
+
+  <!-- Circle signup via Formspree (shares the same form endpoint as the waitlist).
+       Connected to form mojbzaje (frq.community@gmail.com). -->
+  <form class="signup" action="https://formspree.io/f/mojbzaje" method="POST" data-formspree novalidate>
+    <div data-form-fields>
+      <label class="field-label" for="c-handle">Your name in the community</label>
+      <input class="field-input" id="c-handle" name="handle" type="text" required placeholder="not your real name — pick anything">
+
+      <label class="field-label" for="c-email">Email</label>
+      <input class="field-input" id="c-email" name="email" type="email" required placeholder="you@wherever.com">
+
+      <label class="field-label" for="c-tz">Timezone <span>(for matching)</span></label>
+      <select class="field-select" id="c-tz" name="timezone" required>
+        <option value="" disabled selected>Pick your timezone</option>
+        <option value="Pacific/Honolulu">Hawaii (HST)</option>
+        <option value="America/Anchorage">Alaska (AKT)</option>
+        <option value="America/Los_Angeles">Pacific — US/Canada (PT)</option>
+        <option value="America/Denver">Mountain (MT)</option>
+        <option value="America/Chicago">Central (CT)</option>
+        <option value="America/New_York">Eastern — US/Canada (ET)</option>
+        <option value="America/Sao_Paulo">Brazil (BRT)</option>
+        <option value="Europe/London">UK / Ireland (GMT)</option>
+        <option value="Europe/Paris">Central Europe (CET)</option>
+        <option value="Europe/Athens">Eastern Europe (EET)</option>
+        <option value="Africa/Lagos">West Africa (WAT)</option>
+        <option value="Africa/Johannesburg">South Africa (SAST)</option>
+        <option value="Asia/Dubai">Gulf (GST)</option>
+        <option value="Asia/Kolkata">India (IST)</option>
+        <option value="Asia/Bangkok">SE Asia (ICT)</option>
+        <option value="Asia/Shanghai">China (CST)</option>
+        <option value="Asia/Tokyo">Japan / Korea (JST)</option>
+        <option value="Australia/Sydney">Australia — East (AET)</option>
+        <option value="Pacific/Auckland">New Zealand (NZT)</option>
+        <option value="other">Somewhere else</option>
+      </select>
+
+      <label class="field-label" for="c-intent">I want to…</label>
+      <select class="field-select" id="c-intent" name="intent" required>
+        <option value="join">Join an existing circle</option>
+        <option value="start">Start a new circle</option>
+        <option value="either">Either — whatever's easiest</option>
+      </select>
+
+      <!-- hidden Formspree controls -->
+      <input type="hidden" name="_subject" value="New Frq circle request">
+      <!-- honeypot: bots fill this, humans never see it -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Request a circle →</button>
+    </div>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<!-- join modal (shared with index) -->
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-label="Join Frq">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
+    <div class="modal-title">Join Frq</div>
+    <div class="modal-sub">Drop your email and the name you want to go by. We never see your real identity.</div>
+
+    <!-- Waitlist form via Formspree. Connected to form mojbzaje (frq.community@gmail.com). -->
+    <form action="https://formspree.io/f/mojbzaje" method="POST" data-formspree novalidate>
+      <div data-form-fields>
+        <label class="field-label" for="m-email">Email</label>
+        <input class="field-input" id="m-email" name="email" type="email" required placeholder="you@wherever.com">
+
+        <label class="field-label" for="m-handle">Your name in the community</label>
+        <input class="field-input" id="m-handle" name="handle" type="text" required placeholder="not your real name — pick anything">
+
+        <label class="field-label" for="m-tz">Timezone</label>
+        <select class="field-select" id="m-tz" name="timezone" required>
+          <option value="" disabled selected>Pick your timezone</option>
+          <option value="Pacific/Honolulu">Hawaii (HST)</option>
+          <option value="America/Anchorage">Alaska (AKT)</option>
+          <option value="America/Los_Angeles">Pacific — US/Canada (PT)</option>
+          <option value="America/Denver">Mountain (MT)</option>
+          <option value="America/Chicago">Central (CT)</option>
+          <option value="America/New_York">Eastern — US/Canada (ET)</option>
+          <option value="America/Sao_Paulo">Brazil (BRT)</option>
+          <option value="Europe/London">UK / Ireland (GMT)</option>
+          <option value="Europe/Paris">Central Europe (CET)</option>
+          <option value="Europe/Athens">Eastern Europe (EET)</option>
+          <option value="Africa/Lagos">West Africa (WAT)</option>
+          <option value="Africa/Johannesburg">South Africa (SAST)</option>
+          <option value="Asia/Dubai">Gulf (GST)</option>
+          <option value="Asia/Kolkata">India (IST)</option>
+          <option value="Asia/Bangkok">SE Asia (ICT)</option>
+          <option value="Asia/Shanghai">China (CST)</option>
+          <option value="Asia/Tokyo">Japan / Korea (JST)</option>
+          <option value="Australia/Sydney">Australia — East (AET)</option>
+          <option value="Pacific/Auckland">New Zealand (NZT)</option>
+          <option value="other">Somewhere else</option>
+        </select>
+
+        <input type="hidden" name="_subject" value="New Frq member request">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Request access →</button>
+      </div>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="modal-anon"><span>Anonymous by design.</span> Your real identity is never stored or shared. We only see your chosen handle.</p>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html" class="footer-logo">frq</a>
+  <div class="footer-links">
+    <a href="manifesto.html">Manifesto</a>
+    <a href="circle.html">Circle</a>
+  </div>
+  <div class="footer-note">founded anonymously · v0.1 · community-owned</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

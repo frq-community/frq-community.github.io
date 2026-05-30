@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Frq Open Graph image. 1200x630 (1.91:1) per OG spec. -->
+  <rect width="1200" height="630" fill="#0a0a09"/>
+  <!-- faint oversized wordmark, mirrors the hero treatment -->
+  <text x="640" y="470" font-family="Georgia, 'Times New Roman', serif" font-size="520"
+        text-anchor="middle" fill="none" stroke="#ffffff" stroke-opacity="0.04"
+        stroke-width="2" letter-spacing="-20">frq</text>
+  <!-- eyebrow -->
+  <text x="92" y="235" font-family="'Courier New', monospace" font-size="22"
+        fill="#c8f060" letter-spacing="6">FIND YOUR FREQUENCY</text>
+  <!-- wordmark -->
+  <text x="86" y="400" font-family="Georgia, 'Times New Roman', serif" font-size="150"
+        fill="#e8e4dc" letter-spacing="-4">fr<tspan fill="#c8f060">q</tspan></text>
+  <!-- tagline -->
+  <text x="92" y="478" font-family="'Courier New', monospace" font-size="18"
+        fill="#6b6860">Not a religion. Not a cult. Just people who give a damn.</text>
+  <!-- footer hairline + note -->
+  <rect x="92" y="545" width="1016" height="1" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="92" y="582" font-family="'Courier New', monospace" font-size="18"
+        fill="#6b6860" letter-spacing="2">founded anonymously · community-owned · v0.1</text>
+</svg>

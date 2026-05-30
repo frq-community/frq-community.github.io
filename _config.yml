@@ -1,0 +1,25 @@
+# GitHub Pages / Jekyll configuration for Frq
+# The site is plain HTML/CSS/JS — Jekyll just serves it. These settings give
+# pages absolute URLs for SEO and keep source-only files out of the build.
+
+title: "Frq — find your frequency"
+description: "A Gen Z spiritual community built on kindness, not religion. Not a cult. Just people who show up for each other."
+url: "https://frq-community.github.io"
+baseurl: ""
+lang: en
+
+# GitHub Pages serves 404.html automatically for any unmatched route.
+# Declared here so the custom on-brand 404 page is the documented fallback.
+error_page: 404.html
+
+# Don't process or publish project/source files.
+exclude:
+  - CLAUDE.md
+  - README.md
+  - .github/
+  - assets/og-image.svg
+  - Gemfile
+  - Gemfile.lock
+
+# Plain static site — no Jekyll plugins or theme needed.
+plugins: []
