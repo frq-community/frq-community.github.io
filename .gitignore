@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# local Claude Code / tooling settings (not part of the site)
+.claude/
+.gstack/
