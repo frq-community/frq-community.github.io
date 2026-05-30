@@ -4,3 +4,6 @@
 # local Claude Code / tooling settings (not part of the site)
 .claude/
 .gstack/
+
+# project spec — keep local only, not in the public repo
+CLAUDE.md
