@@ -14,7 +14,7 @@
 <meta name="twitter:title" content="Frq — find your frequency">
 <meta name="twitter:description" content="Not a religion. Not a cult. Just people who actually give a damn.">
 <meta name="twitter:image" content="https://frq-community.github.io/assets/og-image.png">
-<meta name="theme-color" content="#0a0a09">
+<meta name="theme-color" content="#0d0b16">
 <link rel="canonical" href="https://frq-community.github.io/">
 <!-- JSON-LD structured data for SEO / rich results -->
 <script type="application/ld+json">
@@ -37,12 +37,12 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #0a0a09;
-    --surface: #111110;
-    --border: rgba(255,255,255,0.08);
-    --text: #e8e4dc;
-    --muted: #6b6860;
-    --accent: #c8f060;
+    --bg: #0d0b16;
+    --surface: #181527;
+    --border: rgba(180,158,255,0.12);
+    --text: #ece9f7;
+    --muted: #8e88a8;
+    --accent: #b49eff;
     --serif: 'Instrument Serif', serif;
     --mono: 'DM Mono', monospace;
   }
@@ -59,7 +59,7 @@
     overflow-x: hidden;
   }
 
-  ::selection { background: var(--accent); color: #0a0a09; }
+  ::selection { background: var(--accent); color: #0d0b16; }
 
   /* noise overlay */
   body::before {
@@ -194,7 +194,7 @@
     gap: 8px;
     padding: 0.75rem 1.75rem;
     background: var(--accent);
-    color: #0a0a09;
+    color: #0d0b16;
     font-family: var(--mono);
     font-size: 13px;
     font-weight: 500;
@@ -640,7 +640,7 @@
     transition: border-color 0.2s;
     appearance: none;
     -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6860' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238e88a8' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1rem center;
   }
@@ -973,7 +973,7 @@
   function toast(message) {
     var note = document.createElement('div');
     note.textContent = message;
-    note.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#c8f060;color:#0a0a09;padding:0.75rem 1.5rem;font-family:"DM Mono",monospace;font-size:13px;z-index:999;letter-spacing:0.04em;max-width:90vw;text-align:center;';
+    note.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#b49eff;color:#0d0b16;padding:0.75rem 1.5rem;font-family:"DM Mono",monospace;font-size:13px;z-index:999;letter-spacing:0.04em;max-width:90vw;text-align:center;';
     document.body.appendChild(note);
     setTimeout(function () { note.remove(); }, 3500);
   }

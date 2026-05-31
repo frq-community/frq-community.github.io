@@ -103,7 +103,7 @@
     var note = document.createElement('div');
     note.textContent = message;
     note.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);' +
-      'background:#c8f060;color:#0a0a09;padding:0.75rem 1.5rem;font-family:"DM Mono",monospace;' +
+      'background:#b49eff;color:#0d0b16;padding:0.75rem 1.5rem;font-family:"DM Mono",monospace;' +
       'font-size:13px;z-index:999;letter-spacing:0.04em;max-width:90vw;text-align:center;';
     document.body.appendChild(note);
     setTimeout(function () { note.remove(); }, 3500);

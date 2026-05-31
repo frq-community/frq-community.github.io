@@ -9,12 +9,12 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0a0a09;
-  --surface: #111110;
-  --border: rgba(255,255,255,0.08);
-  --text: #e8e4dc;
-  --muted: #6b6860;
-  --accent: #c8f060;
+  --bg: #0d0b16;
+  --surface: #181527;
+  --border: rgba(180,158,255,0.12);
+  --text: #ece9f7;
+  --muted: #8e88a8;
+  --accent: #b49eff;
   --serif: 'Instrument Serif', serif;
   --mono: 'DM Mono', monospace;
 }
@@ -31,7 +31,7 @@ body {
   overflow-x: hidden;
 }
 
-::selection { background: var(--accent); color: #0a0a09; }
+::selection { background: var(--accent); color: #0d0b16; }
 
 /* noise overlay — replicated on every page per the design system */
 body::before {
@@ -147,7 +147,7 @@ nav {
   gap: 8px;
   padding: 0.75rem 1.75rem;
   background: var(--accent);
-  color: #0a0a09;
+  color: #0d0b16;
   font-family: var(--mono);
   font-size: 13px;
   font-weight: 500;
@@ -295,7 +295,7 @@ section {
 .field-select {
   appearance: none;
   -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6860' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238e88a8' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1rem center;
 }
