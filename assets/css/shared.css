@@ -9,12 +9,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0d0b16;
-  --surface: #181527;
-  --border: rgba(180,158,255,0.12);
-  --text: #ece9f7;
-  --muted: #8e88a8;
-  --accent: #b49eff;
+  --bg: #15112a;
+  --surface: #221c40;
+  --border: rgba(180,158,255,0.16);
+  --text: #f3efff;
+  --muted: #a59fc4;
+  --accent: #b49eff;       /* lavender — the voice, CTAs, expressive type */
+  --accent-2: #f5c66b;     /* soft gold — gilded labels, numbers, sacred accents */
   --serif: 'Instrument Serif', serif;
   --mono: 'DM Mono', monospace;
 }
@@ -31,7 +32,7 @@ body {
   overflow-x: hidden;
 }
 
-::selection { background: var(--accent); color: #0d0b16; }
+::selection { background: var(--accent); color: #15112a; }
 
 /* noise overlay — replicated on every page per the design system */
 body::before {
@@ -147,7 +148,7 @@ nav {
   gap: 8px;
   padding: 0.75rem 1.75rem;
   background: var(--accent);
-  color: #0d0b16;
+  color: #15112a;
   font-family: var(--mono);
   font-size: 13px;
   font-weight: 500;
@@ -189,7 +190,7 @@ nav {
   font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-2);
   margin-bottom: 1.25rem;
 }
 
@@ -224,7 +225,7 @@ section {
   font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-2);
   margin-bottom: 1.5rem;
 }
 
@@ -250,7 +251,7 @@ section {
 .body-text strong { color: var(--text); font-weight: 400; }
 
 .pullquote {
-  border-left: 2px solid var(--accent);
+  border-left: 2px solid var(--accent-2);
   padding: 0.5rem 0 0.5rem 1.5rem;
   margin: 2.5rem 0;
 }
@@ -295,7 +296,7 @@ section {
 .field-select {
   appearance: none;
   -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238e88a8' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23a59fc4' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1rem center;
 }
