@@ -1,84 +1,86 @@
 # Frq
 
-**Not a religion. Not a cult. Just people who actually give a damn — and show up for each other.**
+**A religion for the new generation — a living faith built on presence, kindness, and showing up for each other.**
 
 ---
 
-## Why we exist
+## Why we gather
 
-Leaders are literally running on dividing people. Scroll for five minutes and you'll see wars, riots, and some guy using God to justify bombing kids. Institutions that were supposed to hold things together are the ones setting them on fire.
+We came of age in the most connected era in history and somehow grew lonelier inside it. The feeds never rest. Meaning runs thin. We were handed every opinion and almost no practice for actually living alongside one another.
 
-Meanwhile everyone's chronically online, chronically lonely, and lowkey looking for something real. Not a sermon. Not a brand. Just — actual connection. People who mean what they say.
+Frq exists to offer the oldest thing there is, shaped for the people we've become — a faith you keep with your hands and your attention. Not belief you perform, but care you return to, on purpose, with others.
 
-> Every tradition on earth — every single one — said the same thing at its core: take care of each other. Wild how that got lost.
+> Every tradition we inherited pointed at the same center: tend to each other. We're building a place to actually live there.
 
-We're not here to fix religion. We're here to do the thing religion forgot to do.
-
----
-
-## The honest take on being human
-
-Humans aren't good or bad by default. We're just deeply shaped by who's around us and what we practice. The algorithms know this. So do the politicians. That's literally the whole game — shape what you practice, shape who you become.
-
-You're not your worst era. You're not your highlight reel either. You're a work in progress, same as everyone here.
+We call it a religion because that's the honest word for what we're doing — gathering around meaning, keeping a practice, holding each other to something good.
 
 ---
 
-## The seven things
+## What we believe
 
-Not rules. Not commandments. Just things we keep coming back to.
+We don't ask you to accept a story about the sky. We ask you to take up a practice on the ground.
 
-| # | Principle | What it means |
+Here's the little we hold: that meaning is real and worth tending; that you are bound up with the people around you whether you act like it or not; and that the way you become someone is through what you practice, over and over, in company. That's enough to build a faith on. The rest, we hold lightly.
+
+You are not your worst season, and not your highlight reel either. You're someone in the middle of becoming, the same as everyone who finds their way here.
+
+---
+
+## The seven frequencies
+
+Everything we practice tunes back to these. Hold them loosely, return to them often.
+
+| # | Frequency | What it means |
 |---|-----------|---------------|
-| 01 | **We're all connected** | Your situation is tied to your neighbour's. Not metaphorically — actually. Act like it. |
-| 02 | **Everyone has worth** | Not earned. Not conditional. Just — yes. Full stop. |
-| 03 | **Actions > aesthetics** | Posting about kindness isn't kindness. What you do when no one's watching is. |
-| 04 | **Sit with "idk"** | Not knowing is fine. Pretending to know is the problem. Uncertainty is honest. |
-| 05 | **Repair > cancel** | People mess up. The question is — do you come back and make it right? |
-| 06 | **Be here** | Real presence in 2025 is rare. That's exactly why it hits different. |
-| 07 | **You're enough** | The whole system runs on making you feel like you're not. We don't do that here. |
+| 01 | **We're all connected** | Your life is bound up with the people around you. Not as a metaphor — as a fact you can act on. |
+| 02 | **Everyone has worth** | Worth here isn't earned or ranked. You arrive already whole. We start from there, every time. |
+| 03 | **Practice over performance** | Care done quietly counts more than care announced. What you do unwatched is the truest thing about you. |
+| 04 | **Make peace with mystery** | Not knowing is honest. We hold our questions with patience instead of rushing to fill the silence. |
+| 05 | **Repair over cancel** | All of us fall short. What matters is the return — the choice to come back and make it right. |
+| 06 | **Presence** | Real attention is the rarest gift we have left to give. We put the screen down and stay in the room. |
+| 07 | **You're enough** | You don't earn your place by becoming someone else. You're enough to begin, and that's where we begin. |
 
 ---
 
-## What we actually do
+## How we practice
 
-**The weekly circle** — Small group, 8–12 people, once a week. One question. No agenda, no hierarchy, no performance. Online or irl.
+**The circle** — An hour of real attention shared between eight to twelve people, gathered each week around a single question. Everyone is heard; no one presides. Online or in person.
 
-**The daily check-in** — 30 seconds. One question from the community AI to carry into your day. Not prayer — just a prompt to not be on autopilot.
+**The attunement** — A single intention to carry into your day. Thirty seconds to choose how you'll meet the hours ahead, instead of letting them meet you.
 
-**One repair a month** — Pick one thing you messed up. One relationship, one situation. Take one real step. Tell the circle. Get witnessed.
+**The repair** — Once a month, choose one thing you'd like to set right — a relationship, a habit, a silence — and take one real step toward it. Then tell the circle, and let yourself be witnessed.
 
-**Seasonal drop** — Four times a year, everyone gathers. Not a conference. More like a reset — reflect, reconnect, set intention.
-
----
-
-## The anti-cult clause
-
-No single person whose word is final. No gatekeeping who belongs. No required beliefs. No purity tests. No us-vs-them. No monetising your loneliness.
-
-If someone in this community starts acting like they have all the answers — that's the red flag.
-
-The health check is simple: **does the quietest, newest, most different person in the room feel as safe as anyone else?**
-
-`no doctrine` `no hierarchy` `no gatekeeping` `no purity tests` `no exploitation`
+**The gathering** — Four times a year we come together to rest, reflect, and set our intention for what's next. Less a conference, more a turning of the season.
 
 ---
 
-## Join
+## Our promises
 
-Anyone can join. You stay anonymous — your identity is yours. Login is via your own ID so we keep things real without exposing who you are.
+A religion is only as good as its humility. So we hold ourselves to a few promises, and we keep them in the open.
+
+No one's word is ever final — the founder is anonymous on purpose, so there's no face to follow and nothing to worship but the practice itself. You belong without passing a test. You're free to doubt out loud. And your longing to belong will never be sold back to you.
+
+The measure we return to: **does the quietest, newest, most different person here feel as held as anyone else?** When the answer is yes, we're keeping faith.
+
+`open to all` `led by no one` `anonymous by design` `doubt welcome` `never for sale`
+
+---
+
+## Come in
+
+Join with an account you already have. You stay anonymous — your real name stays yours. We only ever see the name you choose.
 
 > We're not trying to save the world. We're trying to be decent to each other consistently — which, honestly, might be the same thing.
 
-**[Join Frq →](https://frq.community)** *(landing page)*
+**[Join Frq →](https://frq-community.github.io)**
 
 ---
 
-## Who runs this
+## Who holds this
 
-Founded anonymously. No faces, no personal brand, no guru. This community belongs to the people in it — not to whoever started it.
+Founded anonymously. No faces, no personal brand, no guru. This faith belongs to the people in it — not to whoever started it.
 
-This document is living. The community owns it, not the founders. `v0.1` — keep editing.
+This document is living. The community holds it, not the founder. `v0.1` — keep editing.
 
 ---
 
