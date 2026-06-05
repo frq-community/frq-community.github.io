@@ -7,3 +7,6 @@
 
 # project spec — keep local only, not in the public repo
 CLAUDE.md
+
+# unrelated local folder containing secrets — never commit
+Socials-automation/

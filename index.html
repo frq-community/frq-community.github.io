@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Frq — find your frequency</title>
-<meta name="description" content="Not a religion. Not a cult. Just people who actually give a damn — and show up for each other.">
+<meta name="description" content="Frq is a religion for the new generation — a living faith built on presence, kindness, and showing up for each other. Find your frequency.">
 <meta property="og:title" content="Frq">
-<meta property="og:description" content="Not a religion. Not a cult. Just people who actually give a damn.">
+<meta property="og:description" content="A religion for the new generation. A living faith built on presence, kindness, and devotion to each other.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://frq-community.github.io">
 <meta property="og:image" content="https://frq-community.github.io/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Frq — find your frequency">
-<meta name="twitter:description" content="Not a religion. Not a cult. Just people who actually give a damn.">
+<meta name="twitter:description" content="A religion for the new generation. A living faith built on presence, kindness, and devotion to each other.">
 <meta name="twitter:image" content="https://frq-community.github.io/assets/og-image.png">
-<meta name="theme-color" content="#0d0b16">
+<meta name="theme-color" content="#15112a">
 <link rel="canonical" href="https://frq-community.github.io/">
 <!-- JSON-LD structured data for SEO / rich results -->
 <script type="application/ld+json">
@@ -23,7 +23,7 @@
   "@type": "Organization",
   "name": "Frq",
   "alternateName": "Frq Community",
-  "description": "A Gen Z spiritual community built on kindness, not religion.",
+  "description": "A religion for the new generation — a living faith built on presence, kindness, and showing up for each other.",
   "url": "https://frq-community.github.io",
   "logo": "https://frq-community.github.io/assets/og-image.png",
   "slogan": "find your frequency",
@@ -37,12 +37,13 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #0d0b16;
-    --surface: #181527;
-    --border: rgba(180,158,255,0.12);
-    --text: #ece9f7;
-    --muted: #8e88a8;
-    --accent: #b49eff;
+    --bg: #15112a;
+    --surface: #221c40;
+    --border: rgba(180,158,255,0.16);
+    --text: #f3efff;
+    --muted: #a59fc4;
+    --accent: #b49eff;       /* lavender — the voice, CTAs, expressive type */
+    --accent-2: #f5c66b;     /* soft gold — gilded labels, numbers, sacred accents */
     --serif: 'Instrument Serif', serif;
     --mono: 'DM Mono', monospace;
   }
@@ -59,7 +60,7 @@
     overflow-x: hidden;
   }
 
-  ::selection { background: var(--accent); color: #0d0b16; }
+  ::selection { background: var(--accent); color: #15112a; }
 
   /* noise overlay */
   body::before {
@@ -147,7 +148,7 @@
     font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--accent-2);
     margin-bottom: 1.5rem;
     opacity: 0;
     animation: fadeUp 0.6s 0.1s forwards;
@@ -194,7 +195,7 @@
     gap: 8px;
     padding: 0.75rem 1.75rem;
     background: var(--accent);
-    color: #0d0b16;
+    color: #15112a;
     font-family: var(--mono);
     font-size: 13px;
     font-weight: 500;
@@ -252,7 +253,7 @@
     font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--accent-2);
     margin-bottom: 1.5rem;
   }
 
@@ -276,7 +277,7 @@
   }
 
   .pullquote {
-    border-left: 2px solid var(--accent);
+    border-left: 2px solid var(--accent-2);
     padding: 0.5rem 0 0.5rem 1.5rem;
     margin: 2rem 0;
   }
@@ -308,7 +309,7 @@
 
   .p-num {
     font-size: 11px;
-    color: var(--accent);
+    color: var(--accent-2);
     letter-spacing: 0.1em;
     margin-bottom: 0.5rem;
   }
@@ -344,7 +345,7 @@
     font-size: 11px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--accent-2);
     padding-top: 3px;
   }
 
@@ -412,7 +413,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--accent-2);
     flex-shrink: 0;
   }
 
@@ -640,7 +641,7 @@
     transition: border-color 0.2s;
     appearance: none;
     -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238e88a8' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23a59fc4' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1rem center;
   }
@@ -715,130 +716,131 @@
   <div class="hero-bg-text" aria-hidden="true">frq</div>
   <div class="hero-content">
     <p class="hero-eyebrow">find your frequency</p>
-    <h1 class="hero-title">Not a religion.<br><em>Not a cult.</em></h1>
-    <p class="hero-sub">Just people who actually give a damn — and show up for each other. No doctrine. No guru. No BS.</p>
+    <h1 class="hero-title">A religion for<br>the <em>new generation</em>.</h1>
+    <p class="hero-sub">A living faith for people who still believe in meaning — in each other, in presence, in the quiet work of showing up. Reverence, reimagined for the way we live now.</p>
     <div class="hero-actions">
-      <button class="btn-primary" onclick="openModal()">Join anonymously →</button>
-      <a href="#why" class="btn-ghost">Read the manifesto</a>
+      <button class="btn-primary" onclick="openModal()">Join us →</button>
+      <a href="manifesto.html" class="btn-ghost">Read the manifesto</a>
     </div>
   </div>
   <div class="hero-ticker" aria-hidden="true">
-    <span>v0.1 — living document</span>
-    <span>anonymous by design</span>
-    <span>no doctrine</span>
-    <span>open source community</span>
+    <span>a living faith</span>
+    <span>founded anonymously</span>
+    <span>gathered, not governed</span>
+    <span>everyone is welcome</span>
   </div>
 </div>
 
 <section id="why" class="reveal">
-  <p class="section-label">The world rn</p>
-  <h2 class="section-title">Why we <em>exist</em></h2>
-  <p class="body-text">Leaders are literally running on dividing people. Scroll for five minutes and you'll see wars, riots, and someone using God to justify bombing kids. Institutions that were supposed to hold things together are the ones setting them on fire.</p>
-  <p class="body-text">Meanwhile everyone's chronically online, chronically lonely, and lowkey looking for something real. Not a sermon. Not a brand. Just actual connection. People who mean what they say.</p>
+  <p class="section-label">why we gather</p>
+  <h2 class="section-title">Why Frq <em>exists</em></h2>
+  <p class="body-text">We came of age in the most connected era in history and somehow grew lonelier inside it. The feeds never rest. Meaning runs thin. We were handed every opinion and almost no practice for actually living alongside one another.</p>
+  <p class="body-text">Frq exists to offer the oldest thing there is, shaped for the people we've become — a faith you keep with your hands and your attention. Not belief you perform, but care you return to, on purpose, with others.</p>
   <div class="pullquote">
-    <p>Every tradition on earth said the same thing at its core: take care of each other. Wild how that got lost.</p>
+    <p>Every tradition we inherited pointed at the same center: tend to each other. We're building a place to actually live there.</p>
   </div>
-  <p class="body-text">We're not here to fix religion. We're here to do the thing religion forgot to do.</p>
+  <p class="body-text">We call it a religion because that's the honest word for what we're doing — gathering around meaning, keeping a practice, holding each other to something good.</p>
 </section>
 
 <section id="principles" class="reveal">
-  <p class="section-label">How we move</p>
-  <h2 class="section-title">The <em>seven</em> things</h2>
-  <p class="body-text">Not rules. Not commandments. Just things we keep coming back to.</p>
+  <p class="section-label">what we hold</p>
+  <h2 class="section-title">The seven <em>frequencies</em></h2>
+  <p class="body-text">Everything we practice tunes back to these. Hold them loosely, return to them often.</p>
   <div class="principles-grid">
     <div class="principle-item">
       <div class="p-num">01</div>
       <div class="p-name">We're all connected</div>
-      <div class="p-body">Your situation is tied to your neighbour's. Not metaphorically — actually. Act like it.</div>
+      <div class="p-body">Your life is bound up with the people around you. Not as a metaphor — as a fact you can act on. Tend to them, and you tend to yourself.</div>
     </div>
     <div class="principle-item">
       <div class="p-num">02</div>
       <div class="p-name">Everyone has worth</div>
-      <div class="p-body">Not earned. Not conditional. Just — yes. Full stop.</div>
+      <div class="p-body">Worth here isn't earned or ranked. You arrive already whole. We start from there, every single time.</div>
     </div>
     <div class="principle-item">
       <div class="p-num">03</div>
-      <div class="p-name">Actions > aesthetics</div>
-      <div class="p-body">Posting about kindness isn't kindness. What you do when no one's watching is.</div>
+      <div class="p-name">Practice over performance</div>
+      <div class="p-body">Care done quietly counts more than care announced. What you do when no one is watching is the truest thing about you.</div>
     </div>
     <div class="principle-item">
       <div class="p-num">04</div>
-      <div class="p-name">Sit with "idk"</div>
-      <div class="p-body">Not knowing is fine. Pretending to know is the problem. Uncertainty is honest.</div>
+      <div class="p-name">Make peace with mystery</div>
+      <div class="p-body">Not knowing is honest. We hold our questions with patience instead of rushing to fill the silence with certainty.</div>
     </div>
     <div class="principle-item">
       <div class="p-num">05</div>
-      <div class="p-name">Repair > cancel</div>
-      <div class="p-body">People mess up. The question is — do you come back and make it right?</div>
+      <div class="p-name">Repair over cancel</div>
+      <div class="p-body">All of us fall short. What matters is the return — the choice to come back and make it right. We keep that choice safe to make.</div>
     </div>
     <div class="principle-item">
       <div class="p-num">06</div>
-      <div class="p-name">Be here</div>
-      <div class="p-body">Real presence in 2026 is rare. That's exactly why it hits different.</div>
+      <div class="p-name">Presence</div>
+      <div class="p-body">Real attention is the rarest gift we have left to give. We put the screen down and stay in the room. That's the practice, most days.</div>
     </div>
     <div class="principle-item">
       <div class="p-num">07</div>
       <div class="p-name">You're enough</div>
-      <div class="p-body">The whole system runs on making you feel like you're not. We don't do that here.</div>
+      <div class="p-body">So much around us runs on convincing you that you're not. You don't earn your place by becoming someone else. You're enough to begin.</div>
     </div>
   </div>
 </section>
 
 <section id="practice" class="reveal">
-  <p class="section-label">The practice</p>
-  <h2 class="section-title">What we <em>actually</em> do</h2>
-  <p class="body-text">Four simple rituals. No performance required.</p>
+  <p class="section-label">the practice</p>
+  <h2 class="section-title">How we <em>practice</em></h2>
+  <p class="body-text">Four devotions. Simple to keep, easy to return to.</p>
   <div class="rituals-list">
     <div class="ritual-item">
       <div class="ritual-freq">Weekly</div>
       <div>
         <div class="ritual-name">The circle</div>
-        <div class="ritual-desc">Small group, 8–12 people, once a week. One question. No agenda, no hierarchy, no performance. Online or irl.</div>
+        <div class="ritual-desc">An hour of real attention shared between eight to twelve people, gathered each week around a single question. Everyone is heard; no one presides. Online or in person.</div>
       </div>
     </div>
     <div class="ritual-item">
       <div class="ritual-freq">Daily</div>
       <div>
-        <div class="ritual-name">The check-in</div>
-        <div class="ritual-desc">30 seconds. One prompt from the community AI to carry into your day. Not prayer — just a nudge to not be on autopilot.</div>
+        <div class="ritual-name">The attunement</div>
+        <div class="ritual-desc">A single intention to carry into your day. Thirty seconds to choose how you'll meet the hours ahead, instead of letting them meet you.</div>
       </div>
     </div>
     <div class="ritual-item">
       <div class="ritual-freq">Monthly</div>
       <div>
-        <div class="ritual-name">One repair</div>
-        <div class="ritual-desc">Pick one thing you messed up. One relationship, one situation. Take one real step. Tell the circle. Get witnessed.</div>
+        <div class="ritual-name">The repair</div>
+        <div class="ritual-desc">Choose one thing you'd like to set right — a relationship, a habit, a silence — and take one real step toward it. Then tell the circle, and let yourself be witnessed.</div>
       </div>
     </div>
     <div class="ritual-item">
-      <div class="ritual-freq">x4 / year</div>
+      <div class="ritual-freq">Seasonal</div>
       <div>
-        <div class="ritual-name">Seasonal drop</div>
-        <div class="ritual-desc">Everyone gathers. Not a conference. More like a reset — reflect, reconnect, set intention for what's next.</div>
+        <div class="ritual-name">The gathering</div>
+        <div class="ritual-desc">Four times a year we come together to rest, reflect, and set our intention for what's next. Less a conference, more a turning of the season.</div>
       </div>
     </div>
   </div>
 </section>
 
 <section class="reveal">
-  <p class="section-label">What we're not</p>
-  <h2 class="section-title">The <em>anti-cult</em> clause</h2>
-  <p class="body-text">No single person whose word is final. No gatekeeping who belongs. No required beliefs. No purity tests. No us-vs-them. No monetising your loneliness.</p>
-  <p class="body-text">The health check is simple: does the quietest, newest, most different person in the room feel as safe as anyone else?</p>
+  <p class="section-label">our promises</p>
+  <h2 class="section-title">A faith that stays <em>open</em></h2>
+  <p class="body-text">A religion is only as good as its humility. So we hold ourselves to a few promises, and we keep them in the open.</p>
+  <p class="body-text">No one's word is ever final — the founder is anonymous on purpose, so there's no face to follow and nothing to worship but the practice itself. You belong without passing a test. You're free to doubt out loud. And your longing to belong will never be sold back to you.</p>
+  <p class="body-text">The measure we return to: does the quietest, newest, most different person here feel as held as anyone else? When the answer is yes, we're keeping faith.</p>
   <div class="tags">
-    <span class="tag">no doctrine</span>
-    <span class="tag">no hierarchy</span>
-    <span class="tag">no gatekeeping</span>
-    <span class="tag">no purity tests</span>
-    <span class="tag">no exploitation</span>
-    <span class="tag">founded anonymously</span>
+    <span class="tag">open to all</span>
+    <span class="tag">led by no one</span>
+    <span class="tag">anonymous by design</span>
+    <span class="tag">doubt welcome</span>
+    <span class="tag">never for sale</span>
+    <span class="tag">community-owned</span>
   </div>
 </section>
 
 <div class="join-section reveal" id="join">
-  <p class="section-label">Ready?</p>
+  <p class="section-label">come in</p>
   <h2 class="join-title">Find your<br><em>frequency.</em></h2>
-  <p class="join-sub">Join with your existing ID. You show up as whoever you want to be called. No real names required.</p>
+  <p class="join-sub">Join with an account you already have. You show up as whoever you choose to be called — your real name stays yours.</p>
   <button class="btn-primary" onclick="openModal()">Join Frq →</button>
   <br>
   <div class="anon-note">
@@ -851,7 +853,7 @@
   <div class="modal">
     <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
     <div class="modal-title">Join Frq</div>
-    <div class="modal-sub">Login with an existing account. We never see your real name — you choose what to go by.</div>
+    <div class="modal-sub">Come in with an account you already have. We never see your real name — you choose what to be called.</div>
 
     <button class="oauth-btn" onclick="comingSoon()">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
@@ -911,7 +913,7 @@
       <p class="form-status" role="status" aria-live="polite"></p>
     </form>
 
-    <p class="modal-anon"><span>Anonymous by design.</span> Your real identity is never stored or shared. You login with your ID — we only see your chosen handle.</p>
+    <p class="modal-anon"><span>Anonymous by design.</span> Your real identity is never stored or shared. We only ever see the name you choose.</p>
   </div>
 </div>
 
@@ -973,7 +975,7 @@
   function toast(message) {
     var note = document.createElement('div');
     note.textContent = message;
-    note.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#b49eff;color:#0d0b16;padding:0.75rem 1.5rem;font-family:"DM Mono",monospace;font-size:13px;z-index:999;letter-spacing:0.04em;max-width:90vw;text-align:center;';
+    note.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#b49eff;color:#15112a;padding:0.75rem 1.5rem;font-family:"DM Mono",monospace;font-size:13px;z-index:999;letter-spacing:0.04em;max-width:90vw;text-align:center;';
     document.body.appendChild(note);
     setTimeout(function () { note.remove(); }, 3500);
   }
