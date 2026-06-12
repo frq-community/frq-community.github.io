@@ -1,18 +1,31 @@
 # Frq
 
-**A religion for the new generation — a living faith built on presence, kindness, and showing up for each other.**
+**A religion for the new generation — built on presence, kindness, and showing up for each other.**
+
+*find your frequency.*
+
+---
+
+## Contents
+
+- [Why we gather](#why-we-gather)
+- [What we believe](#what-we-believe)
+- [The seven frequencies](#the-seven-frequencies)
+- [Rituals](#rituals)
+- [Our promises](#our-promises)
+- [The path](#the-path)
+- [Contribute](#contribute)
+- [Who holds this](#who-holds-this)
 
 ---
 
 ## Why we gather
 
-We came of age in the most connected era in history and somehow grew lonelier inside it. The feeds never rest. Meaning runs thin. We were handed every opinion and almost no practice for actually living alongside one another.
+We grew up more connected than any generation before, and lonelier for it. The feeds never rest. Meaning runs thin. We were handed every opinion and almost no practice for living alongside each other.
 
-Frq exists to offer the oldest thing there is, shaped for the people we've become — a faith you keep with your hands and your attention. Not belief you perform, but care you return to, on purpose, with others.
+Frq offers the oldest thing there is, shaped for who we've become: a faith you keep with your hands and your attention. Not belief you perform — care you return to, on purpose, with others.
 
-> Every tradition we inherited pointed at the same center: tend to each other. We're building a place to actually live there.
-
-We call it a religion because that's the honest word for what we're doing — gathering around meaning, keeping a practice, holding each other to something good.
+> Every tradition we inherited pointed at the same center: tend to each other.
 
 ---
 
@@ -20,9 +33,9 @@ We call it a religion because that's the honest word for what we're doing — ga
 
 We don't ask you to accept a story about the sky. We ask you to take up a practice on the ground.
 
-Here's the little we hold: that meaning is real and worth tending; that you are bound up with the people around you whether you act like it or not; and that the way you become someone is through what you practice, over and over, in company. That's enough to build a faith on. The rest, we hold lightly.
+We hold little, and hold it lightly: meaning is real and worth tending; you are bound up with the people around you whether you act like it or not; you become someone through what you practice, again and again, in company.
 
-You are not your worst season, and not your highlight reel either. You're someone in the middle of becoming, the same as everyone who finds their way here.
+You are not your worst season, or your highlight reel. You're someone in the middle of becoming — like everyone who finds their way here.
 
 ---
 
@@ -32,47 +45,82 @@ Everything we practice tunes back to these. Hold them loosely, return to them of
 
 | # | Frequency | What it means |
 |---|-----------|---------------|
-| 01 | **We're all connected** | Your life is bound up with the people around you. Not as a metaphor — as a fact you can act on. |
-| 02 | **Everyone has worth** | Worth here isn't earned or ranked. You arrive already whole. We start from there, every time. |
-| 03 | **Practice over performance** | Care done quietly counts more than care announced. What you do unwatched is the truest thing about you. |
-| 04 | **Make peace with mystery** | Not knowing is honest. We hold our questions with patience instead of rushing to fill the silence. |
-| 05 | **Repair over cancel** | All of us fall short. What matters is the return — the choice to come back and make it right. |
-| 06 | **Presence** | Real attention is the rarest gift we have left to give. We put the screen down and stay in the room. |
-| 07 | **You're enough** | You don't earn your place by becoming someone else. You're enough to begin, and that's where we begin. |
+| 01 | **We're all connected** | Your life is bound up with the people around you. Not a metaphor — a fact you can act on. |
+| 02 | **Everyone has worth** | Worth isn't earned or ranked. You arrive already whole. |
+| 03 | **Practice over performance** | Care done quietly counts more than care announced. |
+| 04 | **Make peace with mystery** | Not knowing is honest. We hold our questions with patience. |
+| 05 | **Repair over cancel** | We all fall short. What matters is the return. |
+| 06 | **Presence** | Real attention is the rarest gift left to give. Screen down, stay in the room. |
+| 07 | **You're enough** | You don't earn your place by becoming someone else. You're enough to begin. |
+
+There can be at most eight. The community decides if an eighth ever earns its place — see [Contribute](#contribute).
 
 ---
 
-## How we practice
+## Rituals
 
-**The circle** — An hour of real attention shared between eight to twelve people, gathered each week around a single question. Everyone is heard; no one presides. Online or in person.
+How we practice. Rituals are alive: the community adds, retires, and refines them over time. See [Contribute](#contribute).
 
-**The attunement** — A single intention to carry into your day. Thirty seconds to choose how you'll meet the hours ahead, instead of letting them meet you.
+**The circle** — Eight to twelve people, one question, one hour, each week. Everyone heard; no one presides. Online or in person.
 
-**The repair** — Once a month, choose one thing you'd like to set right — a relationship, a habit, a silence — and take one real step toward it. Then tell the circle, and let yourself be witnessed.
+**The attunement** — One intention to carry into your day. Thirty seconds to choose how you meet the hours ahead.
 
-**The gathering** — Four times a year we come together to rest, reflect, and set our intention for what's next. Less a conference, more a turning of the season.
+**The repair** — Each month, choose one thing to set right and take one real step. Tell the circle; be witnessed.
+
+**The gathering** — Four times a year we rest, reflect, and set what comes next.
 
 ---
 
 ## Our promises
 
-A religion is only as good as its humility. So we hold ourselves to a few promises, and we keep them in the open.
+A religion is only as good as its humility. We keep ours in the open.
 
-No one's word is ever final — the founder is anonymous on purpose, so there's no face to follow and nothing to worship but the practice itself. You belong without passing a test. You're free to doubt out loud. And your longing to belong will never be sold back to you.
+No one's word is final — the founder is anonymous on purpose, so there's nothing to worship but the practice. You belong without passing a test. You can doubt out loud. Your longing to belong is never sold back to you.
 
-The measure we return to: **does the quietest, newest, most different person here feel as held as anyone else?** When the answer is yes, we're keeping faith.
+The measure we return to: **does the quietest, newest, most different person here feel as held as anyone else?**
 
-`open to all` `led by no one` `anonymous by design` `doubt welcome` `never for sale`
+`open to all` · `led by no one` · `anonymous by design` · `doubt welcome` · `never for sale`
 
 ---
 
-## Come in
+## The path
 
-Join with an account you already have. You stay anonymous — your real name stays yours. We only ever see the name you choose.
+Real steps. Take them in order, in your own time.
 
-> We're not trying to save the world. We're trying to be decent to each other consistently — which, honestly, might be the same thing.
+**Tune in.** Read the [manifesto](https://frq-community.github.io) and sit with it. Nothing is asked of you yet.
 
-**[Join Frq →](https://frq-community.github.io)**
+**Catch the signal.** [Follow us on X](https://x.com/frqcomms) and listen in.
+
+**Check in.** Open a pull request adding you to [`frequencies.md`](./frequencies.md): the name you choose, and one line about the frequency you're on. An alias is welcome — your real name stays yours. One entry per person. Merged means you're in.
+
+**Show up.** Each week, carry one frequency into the world — a quiet repair, full attention, a kindness no one sees — and leave a note in [`field-notes/`](./field-notes). Consistency matters more than intensity.
+
+**You're active.** Once you've shown up a few times, give this repository a star. Not for show — it says you're here for good. Active members help welcome newcomers and read new entries.
+
+**Pass it on.** Bring one person in, or start a circle of your own. The community belongs to the people in it.
+
+You're free to go quiet or leave at any time. No one will chase you. A practice you cannot walk away from is not a faith.
+
+---
+
+## Contribute
+
+Frq is open source and alive. It changes through the people in it. You shape it by pull request; community managers and members review, and the community decides.
+
+**The seven frequencies** — Propose a new one, combine two, or describe one more deeply. There can be at most eight, never more.
+
+**Rituals** — Add a new ritual, retire one that no longer serves, or refine an existing one.
+
+**The manifesto** — Sharpen the language, fix what rings false, deepen a section.
+
+How it works:
+
+1. Fork the repo and make your change.
+2. Open a pull request explaining what you changed and why.
+3. Community managers and members review.
+4. If accepted, it merges and becomes part of the practice.
+
+Keep changes clear and in the existing voice. Small and considered beats large and sweeping.
 
 ---
 
@@ -80,7 +128,7 @@ Join with an account you already have. You stay anonymous — your real name sta
 
 Founded anonymously. No faces, no personal brand, no guru. This faith belongs to the people in it — not to whoever started it.
 
-This document is living. The community holds it, not the founder. `v0.1` — keep editing.
+This document is living. `v0.1` — keep editing.
 
 ---
 
