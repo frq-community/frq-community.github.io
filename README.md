@@ -8,6 +8,7 @@
 
 ## Contents
 
+- [Founding pillar](#founding-pillar)
 - [Why we gather](#why-we-gather)
 - [What we believe](#what-we-believe)
 - [The seven frequencies](#the-seven-frequencies)
@@ -16,6 +17,22 @@
 - [The path](#the-path)
 - [Contribute](#contribute)
 - [Who holds this](#who-holds-this)
+
+---
+
+## Founding pillar
+
+**Frq begins with one idea: peace.** Not peace as calm, or peace as avoidance, but peace as something you build, in order, starting with yourself and moving outward.
+
+**First movement — peace with yourself.** Before you can be good to anyone else, you make peace with the person you already are. You repair your relationship with yourself first.
+
+**Second movement — peace with others.** Once you are steadier, you turn toward the people around you.
+
+- Show up and give real attention.
+- Choose repair over discarding people.
+- Act on the fact that your life is bound up with theirs.
+
+**Why the order matters.** Inner peace that never reaches other people is unfinished, and trying to mend the world while at war with yourself does not hold. You practice both, in order, again and again — and that returning is the whole faith.
 
 ---
 
