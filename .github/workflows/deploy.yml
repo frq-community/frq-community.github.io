@@ -1,7 +1,7 @@
-# Deploy Frq to GitHub Pages
+# Deploy Mesh to GitHub Pages
 # Pure static site (HTML/CSS/JS) — no build step. On every push to main we
 # publish the repo root to the gh-pages branch, excluding source-only files.
-name: Deploy Frq to GitHub Pages
+name: Deploy Mesh to GitHub Pages
 
 on:
   push:
